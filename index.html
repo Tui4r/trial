@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @font-face {
+        font-family: TH;
+        src: url(/fonts/THSarabun.ttf);
+    }
+
+    * {
+        font-family: TH;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+
+    body {
+        background: linear-gradient(rgba(255, 255, 255, 0.342),rgba(255, 255, 255, 0.342)), url(/assets/images/watsaman.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    .content {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        letter-spacing: 2px;
+        text-align: center;
+    }
+
+    .content h1 {
+        color: rgb(255, 82, 1);
+        font-size: 4.8rem;
+        text-shadow: 3px 3px 3px rgb(12, 22, 22);
+    }
+
+    .content h2 {
+        color: rgb(236, 233, 25);
+        text-shadow: 3px 3px 3px rgb(0, 0, 0);
+        font-size: 3.8rem;
+    }
+
+    .cssanimation, .cssanimation span {
+    animation-duration: 1s ;
+    animation-fill-mode: both;
+}
+
+.cssanimation span { display: inline-block }
+
+.fadeInBottom { animation-name: fadeInBottom }
+@keyframes fadeInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to { opacity: 1 }
+}
+</style>
+
+<body>
+    <div class="content">
+        <h1 class="cssanimation sequence fadeInBottom">โรงพยาบาลวัดสมานรัตนาราม (พุทธโสธร 2)</h1>
+        <h2 class="cssanimation sequence fadeInBottom">จังหวัด ฉะเชิงเทรา</h2>
+        <!--<h1 class="cssanimation random fadeInBottom">cssanimation</h1>-->
+      </div>
+
+</body>
+
+</html>
